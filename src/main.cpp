@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
   // put your main code here, to run repeatedly:
-  String buf = Serial.readStringUntil('\0');
+  String buf = Serial.readStringUntil('\n');
   Serial.print(buf);
   digitalWrite(LED_BUILTIN, HIGH);
   delay(500);
